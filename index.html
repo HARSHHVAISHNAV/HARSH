@@ -5,52 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARSH</title>
     <style>
-        body{   
+        body{
+            /* background-color: black; */
+            /* background-color: rgba(0, 0, 0, 0.818); */
         }
-        
+        .body{
+            display: flex;
+            /* border: 2px solid black; */
+            flex-direction: column;
+            justify-content:space-between;
+            height: 710px;
+            background-color: rgba(0, 0, 0, 0.818);
+        } 
         .navbar{
+            order: 1;
             display: flex;
             /* border: 2px solid black; */
             width: 100%;
-            height: 160px;
+            height: 200px;
+            justify-content: center;
             justify-content: space-around;
-            align-items: end;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 10px 2px #737373;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            background-color:rgb(77, 38, 105);
+            
         }
-        .icons1,.icons2,.icons3,.icons4{
+        .items1,.items2,.items3{
+            border:2px solid black;
+            align-self:flex-end;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 5px 5px #888888;
+            padding: 5px;
+            background-color:rgb(154, 102, 191);
+        }
+        button{
+            background-color:rgb(154, 102, 191);
+            cursor: pointer;
+            border: none;
+        }
+        .items1:hover,.items2:hover,.items3:hover{
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+        .block{
+            order: 3;
             display: flex;
             /* border: 2px solid black; */
-            height: 20px;
-            color: black;
-            font-style: italic;
-            box-shadow: 0 0 20px rgba(0, 0, 0.5 );
+            width: 100%;
+            height: 250px;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .box1,.box2,.box3{
+            display: flex;
+           border: 2px solid black;
+           align-self:center;
+           height: 200px;
+           width: 200px;
+           border-radius: 40px;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 5px 5px #888888;
+          font-size: 25px;
+          background-color: rgba(82, 30, 125, 0.652);
         }
         a{
-            text-decoration: none; 
+            text-decoration: none;
+            color: black;
+            font-family: cursive;
         }
-        .latest{
+        .box1:hover,.box2:hover,.box3:hover{
+            opacity: 1.0;
+            transform: scale(1.15);
+        }
+        .mid{
+            order: 2;
+            display: flex;
+            /* border: 2px solid red; */
+            height: 150px;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .profile{
             display: flex;
             border: 2px solid black;
+            height: 79%;
+            width: 8%;
+            top: 6.25%;
+            right: 41.41%;
+            bottom: 67.31%;
+            left: 41.48%;
+            border-radius: 50%;
+            overflow: hidden;
+            justify-content: center;
             align-self: center;
-            height: 200px;
-            margin-top: 200px;
         }
+        .profile:hover{
+            box-shadow: 5px 5px 10px 2px #737373;
+            opacity: 1.0;
+            transform: scale(1.15);
+        }
+        .harsh,.vaish{
+            display: flex;
+            /* border: 2px solid red; */
+            font-family:fantasy;
+            color: indigo;
+            font-size: 50px;
+            align-self: center;
 
+        }
+        .harsh:hover,.vaish:hover{
+            box-shadow: 5px 5px 10px 2px #737373;
+            opacity: 1.0;
+            transform: scale(1.15);
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <a href=""> <div class="icons1">HOME</div></a>
-            <a href=""><div class="icons2">PROFILE</div></a>
-            <a href=""><div class="icons3">CERTIFICATES</div></a>
-            <a href=""><div class="icons4">ACCOUNTS</div></a>
+    <header class="body">
+    <div class="navbar">
+        <div class="items1"><button style="font-family: cursive;">HOME</button></div>
+        <div class="items2"><button style="font-family: cursive;">MY PROFILE</button></div>
+        <div class="items3"><button style="font-family: cursive;">RECORDS</button></div>
+    </div>
+    <div class="block">
+        <div class="box1"><a href="">CERTIFICATES</a></div>
+        <div class="box2"><a href="">DOCUMENTS</a></div>
+        <div class="box3"><a href="">NOTES</a></div>
+    </div>
+    <div class="mid">
+        <div class="harsh">
+            HARSH
         </div>
-        <div class="latest">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
+        <div class="profile">
+            <img src="bgi2.jpg" alt="">
         </div>
-    </header>
+        <div class="vaish">
+            VAISHNAV
+        </div>
+    </div>
+   </header>
 </body>
 </html>
